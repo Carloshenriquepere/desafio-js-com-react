@@ -3,6 +3,7 @@ import './App.css'
 import Album from './componentes/Album'
 import Fotos from './componentes/Fotos'
 import Home from './componentes/Home'
+import Usuario from './componentes/Usuario'
 
 export default function App(){
 
@@ -22,6 +23,8 @@ export default function App(){
       window.open('http://localhost:3000?fotos','_self')
     }else if(p == 'home'){
       window.open('http://localhost:3000?home' , '_self')
+    }else if(p == 'user'){
+      window.open('http://localhost:3000?user' , '_self')
     }
   }
 
@@ -32,6 +35,8 @@ export default function App(){
       return <Fotos/>
     }else if(pagina=='home'){
         return <Home/>
+    }else if(pagina=='user'){
+      return <Usuario/>
     }else{
       return<div>
               <button id='but1' onClick ={()=>linksPaginas('home')}>Home</button>
@@ -43,7 +48,7 @@ export default function App(){
 
   return(
     <body className='body'>
-      <h1>Selecione uma das opções</h1>
+      <h1>Teste em React usando JSON</h1>
       {retornarPagina()}
     </body>
   )

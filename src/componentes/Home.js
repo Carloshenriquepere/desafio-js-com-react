@@ -17,13 +17,12 @@ export default function Home(){
              <br/>
              <a href="http://localhost:3000?album"> Ir para Album</a>
             {home.map(home=>
-                <div key={home.id}> 
+                <div key={home.id}>
                     <ul>
                         <li>{home.id}</li> 
-                        <li>{home.username}</li> 
+                        <li>{home.name}</li> 
                         <li>{home.email}</li>
-                        <li>{home.phone}</li>
-                        <li>{home.website}</li>
+                        <a href="http://localhost:3000?user">Detalhes</a>
                     </ul>
                 </div>
             )}

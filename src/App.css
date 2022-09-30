@@ -2,8 +2,8 @@ body{
   position: relative;
   border: #025454;
   margin: auto;
-  padding: 0px 10px 10px 10px;
-  max-width: 1200px;
+  padding: 0px 0px 0px 0px;
+  max-width: 800px;
 
 }
 
@@ -89,7 +89,17 @@ ul{
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 700px;
 }
-a {
+#dtl{
+  text-align: center;
+  background-color: #10021d;
+	color: #F2E7DC;
+	padding: 10px;
+	margin-bottom: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+
+}
+a{
 	color: #F2E7DC;
   text-decoration: none;
 }
